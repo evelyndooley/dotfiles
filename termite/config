@@ -1,0 +1,46 @@
+[options]
+font = Space Mono 11
+# font = Monospace 9
+# font = xos4 Terminus 12px
+# font = Droid Sans Mono 8
+
+[colors]
+
+# special
+foreground      = #eaeaea
+foreground_bold = #eaeaea
+cursor          = #eaeaea
+# background      = rgba(20, 16, 33, 0.75) 
+background	= rgba(25, 25, 33, 0.5)
+
+# black
+color0  = #272822
+color8  = #75715e
+
+# red
+color1  = #f92672
+color9  = #f92672
+
+# green
+color2  = #a6e22e
+color10 = #a6e22e
+
+# yellow
+color3  = #f4bf75
+color11 = #f4bf75
+
+# blue
+color4  = #66d9ef
+color12 = #66d9ef
+
+# magenta
+color5  = #ae81ff
+color13 = #ae81ff
+
+# cyan
+color6  = #a1efe4
+color14 = #a1efe4
+
+# white
+color7  = #f8f8f2
+color15 = #f9f8f5
