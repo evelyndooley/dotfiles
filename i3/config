@@ -163,10 +163,12 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 exec polybar -r top        
 
+# Gap size in px
 gaps inner 5
 gaps outer 7
 smart_borders on
 
+# Default startup apps
 exec compton -b
 exec nm-applet
 exec blueman-applet

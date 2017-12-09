@@ -18,17 +18,13 @@ module-margin-left = 0
 module-margin-right = 0
 
 font-1 = Space Mono:style=Regular:size=12;0:antialias=true
-;font-1 = ShureTechMono Nerd Font Mono:style=Regular:size=14;0:antialias=true
-;font-0 = Roboto Mono:pixelsize=13;0
-;font-1 = Wuncon Siji:pixelsize=10
 font-0 = FontAwesome:size=12;1:antialias=true
-;font-3 = fixed:pixelsize=10;1
 font-2 = Unifont:fontformat=truetype:size=12:antialias=true;0
 font-3 = "Material Icons:fontformat=truetype:size=18;1" 
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = network volume backlight cpu memory battery battery2 avg-battery powermenu
+modules-right = network volume cpu memory battery battery2 avg-battery powermenu
 
 tray-position = right
 tray-padding = 1
