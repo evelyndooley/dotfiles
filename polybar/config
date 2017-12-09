@@ -5,7 +5,7 @@ offset-x = 0
 offset-y = -1 
 ;bottom = true
 
-background = #cc141021
+background = #aa191921
 foreground = #eee
 
 underline-size = 2
