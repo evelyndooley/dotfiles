@@ -1,0 +1,70 @@
+Xft.dpi:			100
+Xft.antialias:                  1
+Xft.autohint:                   1
+Xft.hinting:                    1
+Xft.hintstyle:                  hintslight
+Xft.lcdfilter:                  lcdlight
+Xft.rgba:                       rgb
+
+URxvt*termName:                 rxvt-256color
+URxvt.depth:                    32
+URxvt*lineSpace:                1
+URxvt.letterSpace:              -1
+URxvt.iso14755:                 false
+URxvt.iso14755_52:              false
+URxvt*geometry:                 65x17
+URxvt.scrollBar:                false
+URxvt*loginShell:               true
+URxvt.internalBorder:           25
+URxvt.perl-ext:	 		default,matcher
+URxvt.url-launcher:             google-chrome
+URxvt.matcher.button: 		1
+
+*.foreground:   #ffeefc
+*.background:   #141021
+*.cursorColor:  #c16772
+
+! black
+*.color0:       #272822
+*.color8:       #75715e
+
+! red
+*.color1:       #f92672
+*.color9:       #f92672
+
+! green
+*.color2:       #a6e22e
+*.color10:      #a6e22e
+
+! yellow
+*.color3:       #f4bf75
+*.color11:      #f4bf75
+
+! blue
+*.color4:       #66d9ef
+*.color12:      #66d9ef
+
+! magenta
+*.color5:       #ae81ff
+*.color13:      #ae81ff
+
+! cyan
+*.color6:       #a1efe4
+*.color14:      #a1efe4
+
+! white
+*.color7:       #f8f8f2
+*.color15:      #f9f8f5
+
+
+rofi.color-enabled: true
+rofi.color-window: #141021, #c16772, #9568a1
+rofi.color-normal: #141021, #ffeefc, #312842, #c16772, #ffeefc
+rofi.color-active: #141021, #c05c47, #312842, #c05c47, #ffeefc
+rofi.color-urgent: #141021, #e4b226, #312842, #e4b226, #ffeefc
+rofi.width: 800
+rofi.padding: 50
+rofi.font: PragmataPro Nerd Font 18
+rofi.bw: 3
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
