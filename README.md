@@ -1,5 +1,5 @@
-My dotfiles for my current rice.
-Dependencies:
+My dotfiles for my current setup.
+Things I used:
 FONTS:
 Space Mono
 FontAwesome

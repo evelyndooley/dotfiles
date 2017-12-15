@@ -8,6 +8,8 @@ call plug#end()
 
 let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
 
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
 set mouse=a
 
 set number
