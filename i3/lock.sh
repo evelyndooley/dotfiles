@@ -48,7 +48,7 @@ l_dim="$folder/l_dim.png"
 l_blur="$folder/l_blur.png"
 l_dimblur="$folder/l_dimblur.png"
 
-ffmpeg -loglevel quiet -f x11grab -video_size 1920x1080 -y -i $DISPLAY -filter_complex "boxblur=10,eq=brightness=-0.03" -vframes 1 scrot.png
+ffmpeg -loglevel quiet -f x11grab -video_size 1920x1200 -y -i $DISPLAY -filter_complex "boxblur=10,eq=brightness=-0.03" -vframes 1 scrot.png
 l_scrot="scrot.png"
 
 convert "$l_scrot" -draw "fill black fill-opacity 0.4 $rectangles" "$l_scrot"

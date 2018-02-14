@@ -3,9 +3,9 @@
 	"groups": {
 		"hostname":         { "fg": "brightyellow", "bg": "mediumorange", "attrs": [] },
 		"environment":      { "fg": "white", "bg": "darkestgreen", "attrs": [] },
-		"cwd":              { "fg": "gray1", "bg": "gold3", "attrs": ["bold"] },
+		"cwd":              { "fg": "gray1", "bg": "mediumcyan", "attrs": ["bold"] },
 		"cwd:current_folder": { "fg": "gray90", "bg": "gray2", "attrs": ["bold"] },
-		"cwd:divider":      { "fg": "gray1", "bg": "gold3" },
+		"cwd:divider":      { "fg": "gray1", "bg": "mediumcyan" },
 	
 		"attached_clients": { "fg": "white", "bg": "darkestgreen", "attrs": [] }
 	},

@@ -1,12 +1,14 @@
 [bar/top]
+monitor = ${env:MONITOR:HDMI2}
 width = 100%
-height = 35 
+height = 25 
 offset-x = 0
 offset-y = -1 
 ;bottom = true
 
 background = #aa191921
 foreground = #eee
+foreground-alt = #eee
 
 underline-size = 2
 underline-color = #eee
@@ -17,14 +19,18 @@ padding-right = 0
 module-margin-left = 0 
 module-margin-right = 0
 
-font-1 = Space Mono:style=Regular:size=12;0:antialias=true
-font-0 = FontAwesome:size=12;1:antialias=true
-font-2 = Unifont:fontformat=truetype:size=12:antialias=true;0
-font-3 = "Material Icons:fontformat=truetype:size=18;1" 
+font-0 = Misc Tamsyn
+;font-0 = Space Mono:style=Regular:size=11;0:antialias=false
+font-1 = fa-regular-400:fontformat=truetype:size=10;1:antialias=false
+font-2 = Unifont:fontformat=truetype:size=10:antialias=false;0
+font-3 = "Material Icons:fontformat=truetype:size=10;1"
+font-4 = "Font Awesome 5 Free:size=10;1:antialias=false"
+font-5 = "Fura Mono Nerd Font Mono:size=16;1"
+
 
 modules-left = i3 xwindow
-modules-center = date
-modules-right = network volume cpu memory battery battery2 avg-battery powermenu
+modules-center = date weather
+modules-right = network volume cpu memory powermenu
 
 tray-position = right
 tray-padding = 1
@@ -47,27 +53,27 @@ ws-icon-3 = music;
 ws-icon-default = 
 
 label-unfocused = %icon%
-label-unfocused-padding = 3
+label-unfocused-padding = 2
 
 format =" <label-mode><label-state>  "
 label-focused = %icon%  
 label-focused-background = #88000000
 label-focused-underline= #ddd
-label-focused-padding = 3 
+label-focused-padding = 2 
 
 label-occupied = %icon% 
-label-occupied-padding = 3 
+label-occupied-padding = 2 
 
 label-urgent = %icon% 
-label-urgent-padding = 3
+label-urgent-padding = 2
 
 label-empty = %icon% 
 label-empty-foreground = #44ffffff
-label-empty-padding = 3
+label-empty-padding = 2
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:80:...%
+label = %title:0:60:...%
 label-padding = 1 
 
 [module/date]
@@ -193,24 +199,42 @@ type = internal/volume
 
 mapped = false
 master-mixer = Master
-format-volume = <ramp-volume>  <label-volume>
+;master-soundcard=hw:1
+format-volume = <ramp-volume><bar-volume>
 format-muted = <label-muted>
 label-volume = %percentage%
-label-muted =   muted
+label-muted =  muted
 label-muted-foreground = #aaa
-format-volume-padding = 3
-format-muted-padding = 3
+format-volume-padding = 0
+format-muted-padding = 0
 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-headphones-0 = 
 
+bar-volume-width = 7
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = #555
+
 [module/powermenu]
 type = custom/menu
 
-;label-open = 
-label-open =       
+label-open = 
+;label-open =       
 label-open-background = #dd0000
 ;label-open-foreground = #fff
 label-close = cancel
@@ -305,7 +329,7 @@ label =   %gb_used%
 
 [module/network]
 type = internal/network
-interface = wlp3s0
+interface = enp13s0
 format-connected-padding = 1
 ; Seconds to sleep between updates
 ; Default: 1
@@ -382,3 +406,10 @@ animation-packetloss-1 = 📶
 animation-packetloss-1-foreground = #000000
 ; Framerate in milliseconds
 animation-packetloss-framerate = 500
+
+[module/weather]
+type = custom/script
+interval = 10
+format = <label>
+exec = ~/.config/polybar/weather
+format-padding = 2

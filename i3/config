@@ -164,16 +164,19 @@ bindsym $mod+r mode "resize"
 exec polybar -r top        
 
 # Gap size in px
-gaps inner 5
-gaps outer 7
+gaps inner 12
+gaps outer 5
 smart_borders on
 
 # Default startup apps
-exec compton -b
-exec nm-applet
-exec blueman-applet
-exec redshift
-exec ~/wall/2mvsscy380gz.jpg
-exec xbindkeys
-exec devilspie -a
-exec xss-lock -- ~/.config/i3/lock.sh -l 
+exec compton -b &
+exec nm-applet &
+exec blueman-applet &
+exec redshift &
+exec feh --bg-scale --randomize /hdd/wall/* &
+exec xbindkeys &
+exec devilspie -a &
+exec xss-lock -- ~/.config/i3/lock.sh -l &
+exec udiskie --tray --use-udisks2 &
+exec cadence &
+

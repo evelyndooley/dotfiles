@@ -25,7 +25,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 export MAKEFLAGS="-j$(expr $(nproc) \+ 1)" 
-. /usr/share/zsh/site-contrib/powerline.zsh
+. /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
 eval $(thefuck --alias)
 alias ls='ls --color=auto'
 alias rm='rm -i'
