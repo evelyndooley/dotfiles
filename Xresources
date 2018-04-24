@@ -68,3 +68,5 @@ rofi.font: Space Mono 18
 rofi.bw: 3
 rofi.separator-style: solid
 rofi.hide-scrollbar: true
+rofi.terminal: termite
+rofi.opacity: 50

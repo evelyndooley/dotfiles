@@ -1,5 +1,5 @@
 [options]
-font = Tamzen 
+font = Tamzen
 # font = Monospace 9
 # font = xos4 Terminus 12px
 # font = Droid Sans Mono 8
@@ -11,7 +11,7 @@ foreground      = #eaeaea
 foreground_bold = #eaeaea
 cursor          = #eaeaea
 # background      = #333333 
-background	= rgba(25, 25, 33, 0.6)
+background	= rgba(25, 25, 33, 0.3)
 
 # black
 color0  = #272822
