@@ -12,7 +12,7 @@ Check `nvim/`, `nvimpager/`, and `firefox/` for info on those configs!
 
 ###### [oh-my-zsh](https://ohmyz.sh/)
 
-```
+```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
@@ -20,7 +20,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 ###### [ZSH Spaceship Prompt](https://github.com/denysdovhan/spaceship-prompt)
 
-```
+```bash
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
@@ -29,13 +29,13 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 ###### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
-```
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 ###### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-```
+```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
