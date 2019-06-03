@@ -64,7 +64,7 @@ Slightly transparent background, no tmux session, drops down from the top of the
 
 ## chunkwm + skhd
 
-![chunkwm tiled firefox and iTerm, with floating Finder window](/screens/chunkwm/png?raw=true)
+![chunkwm tiled firefox and iTerm, with floating Finder window](/screens/chunkwm.png?raw=true)
 
 Customized `skhd` config includes i3-like keybindings as well as extras found at the bottom of the file
 
