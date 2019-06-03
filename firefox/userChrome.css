@@ -1,0 +1,246 @@
+/*TABS*/
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+toolbarbutton#alltabs-button {
+    -moz-binding: url("userChrome.xml#js");
+}
+
+#tabbrowser-tabs .tabbrowser-tab .tab-close-button { display:none!important; }
+
+.tabbrowser-tab[fadein]:not([pinned]) { min-width: 60px !important; max-width: 35px !important; }
+
+.tabbrowser-tab {
+
+height: 49px!important;
+
+}
+
+.tab-icon-image {
+
+height: 36px !important;
+
+width: 36px !important;
+
+filter: drop-shadow(1px 1px 1px #A9A9A9);
+
+border-radius: 50%;
+
+}
+
+#TabsToolbar {
+
+visibility:collapse;
+
+}
+
+.titlebar-buttonbox-container {
+    margin-right: 10px !important;;
+}
+
+#navigator-toolbox:hover > #TabsToolbar{
+
+visibility: visible !important;
+
+}
+
+.tabbrowser-tab::before,
+
+.tabbrowser-tab::after,
+
+.tab-line
+
+{
+
+display: none !important;
+
+}
+
+.tab-background
+
+{
+
+background-color: transparent !important;
+
+}
+
+.tab-icon-image{
+
+}
+
+.tab-icon-image {
+
+filter: url("data:image/svg+xml;utf8,<svg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)'><filter id='svgMask'><feGaussianBlur stdDeviation='1' /></filter></svg>#svgMask");
+
+opacity: 0.3!important
+
+}
+
+.tab-icon-image:hover {
+
+filter: url("data:image/svg+xml;utf8,<svg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)'><filter id='svgMask'><feGaussianBlur stdDeviation='0.3' /></filter></svg>#svgMask");
+
+filter: drop-shadow(1px 1px 1px #A9A9A9);
+
+opacity: 1!important
+
+}
+
+/*BORDERS*/
+
+.titlebar-placeholder
+
+{
+
+border: 0 !important;
+
+}
+
+:root {
+
+--tabs-border: transparent !important;
+
+}
+
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+
+border-left: none !important;
+
+}
+
+#urlbar, .searchbar-textbox {
+
+border: none !important;
+
+box-shadow: none !important;
+
+}
+
+#nav-bar {
+
+margin-top: 0px !important;
+
+border-top: 0px !important;
+
+box-shadow: none !important;
+
+}
+
+/*NAVBAR*/
+
+:root:not([customizing]) #nav-bar toolbarbutton
+
+{
+
+margin-left: -28px !important;
+
+opacity: 0 !important;
+
+transform: scale(.85, .85) !important;
+
+pointer-events: none !important;
+
+transition: all 100ms var(--animation-easing-function) !important;
+
+}
+
+:root:not([customizing]) :hover > #nav-bar toolbarbutton,
+
+:root:not([customizing]) #navigator-toolbox:focus-within #nav-bar toolbarbutton,
+
+:root:not([customizing]) :hover > #titlebar toolbarbutton {
+
+transform: scale(1, 1) !important;
+
+opacity:0.4 !important;
+
+margin-left:0 !important;
+
+pointer-events: auto !important;
+
+}
+
+#urlbar {opacity: 0.5!important}
+
+#urlbar:hover {opacity: 0.8!important}
+
+#urlbar[focused="true"] {opacity: 1!important}
+
+#urlbar {
+
+background: transparent !important;
+
+border: none !important;
+
+}
+
+#urlbar {
+
+font-size: 12pt !important;
+
+}
+
+#nav-bar {
+
+margin-left: 20 !important;
+
+}
+
+/*TREE STYLE TAB*/
+
+/* Sidebar min and max width removal */
+#sidebar {
+    max-width: none !important;
+    min-width: 0px !important;
+}
+/* Hide splitter, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
+    display: none !important;
+}
+/* Hide sidebar header, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    visibility: collapse;
+}
+
+/* Shrink sidebar until hovered, when using Tree Style Tab. */
+:root {
+    --thin-tab-width: 30px;
+    --wide-tab-width: 200px;
+}
+#sidebar-box:not([sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]) {
+    min-width: var(--wide-tab-width) !important;
+    max-width: none !important;
+}
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+    position: relative !important;
+    transition: all 100ms !important;
+    transition-delay: 500ms !important; 
+    min-width: var(--thin-tab-width) !important;
+    max-width: var(--thin-tab-width) !important;
+}
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover {
+    transition: all 100ms !important;
+    min-width: var(--wide-tab-width) !important;
+    max-width: var(--wide-tab-width) !important;
+
+    /* Negative right-margin to keep page from being pushed to the side. */
+    margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width)) * -1) !important;
+}
+
+/* -------------------------------------------- */
+
+/* put suggestions popup on top */
+/* #PopupAutoCompleteRichResult {
+	opacity: 0.9;
+	margin-top: -332px !important;
+	margin-left: 10px;
+	height: 300px;
+}
+
+#PopupAutoCompleteRichResult .autocomplete-richlistbox > scrollbox {
+	overflow-y: auto !important;
+}
+
+#navigator-toolbox {
+  -moz-box-ordinal-group: 2;
+} */
