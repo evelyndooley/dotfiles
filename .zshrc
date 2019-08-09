@@ -133,4 +133,3 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 clear
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-export HOMEBREW_GITHUB_API_TOKEN=71e643dee9f4f85a11daea65cd7535dd64a128c9
