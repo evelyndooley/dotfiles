@@ -6,6 +6,7 @@ Plug 'honza/vim-snippets'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'jiangmiao/auto-pairs'
+Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
 set guioptions+=a
@@ -20,6 +21,8 @@ set number
 
 set clipboard+=unnamedplus
 
+set lazyredraw
+
 highlight clear
 
 if exists("syntax_on")
@@ -33,3 +36,11 @@ let g:quantum_italics=1
 colorscheme quantum
 
 set fcs=eob:\ 
+
+noremap <silent> <ScrollWheelUp> <C-Y>
+noremap <silent> <ScrollWheelDown> <C-E>
+"inoremap <C-U> <Esc>:call SmoothScroll(1)<Enter>i
+"inoremap <C-D> <Esc>:call SmoothScroll(0)<Enter>i
+
+"noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(10)<CR>
+"noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-10)<CR>
