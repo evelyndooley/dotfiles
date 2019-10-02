@@ -7,6 +7,7 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'jiangmiao/auto-pairs'
 Plug 'yuttie/comfortable-motion.vim'
+Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 set guioptions+=a
@@ -30,15 +31,18 @@ if exists("syntax_on")
 endif
 
 set background=dark
-set termguicolors
-let g:quantum_black=1
-let g:quantum_italics=1
-colorscheme quantum
+"set termguicolors
+"let g:quantum_black=1
+"let g:quantum_italics=1
+"colorscheme quantum
 
-set fcs=eob:\ 
+colorscheme wal
+
+set fcs=eob:\
 
 noremap <silent> <ScrollWheelUp> <C-Y>
 noremap <silent> <ScrollWheelDown> <C-E>
+autocmd BufWritePre * %s/\s\+$//e
 "inoremap <C-U> <Esc>:call SmoothScroll(1)<Enter>i
 "inoremap <C-D> <Esc>:call SmoothScroll(0)<Enter>i
 

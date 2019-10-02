@@ -1,39 +1,45 @@
+include-file = ~/.config/polybar/colors
+
 [bar/top]
-monitor = ${env:MONITOR:HDMI2}
+monitor = ${env:MONITOR:eDP1}
 width = 100%
-height = 25 
+height = 45
 offset-x = 0
-offset-y = -1 
+offset-y = -12
 ;bottom = true
 
-background = #aa191921
-foreground = #eee
-foreground-alt = #eee
+background = #00000000
+foreground = ${colors.foreground}
+foreground-alt = ${colors.foreground-alt}
 
 underline-size = 2
-underline-color = #eee
+underline-color = ${colors.secondary}
 
 spacing = 1
 padding-left = 0
 padding-right = 0
-module-margin-left = 0 
+module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Misc Tamsyn
-;font-0 = Space Mono:style=Regular:size=11;0:antialias=false
-font-1 = fa-regular-400:fontformat=truetype:size=10;1:antialias=false
-font-2 = Unifont:fontformat=truetype:size=10:antialias=false;0
-font-3 = "Material Icons:fontformat=truetype:size=10;1"
-font-4 = "Font Awesome 5 Free:size=10;1:antialias=false"
-font-5 = "Fura Mono Nerd Font Mono:size=16;1"
+font-0 = IBM Plex Mono:size=14;1
+;font-0 = Space Mono:style=Regular:size=12;0:antialias=false
+font-1 = fa-regular-400:fontformat=truetype:size=16;1:antialias=false
+font-2 = Unifont:fontformat=truetype:size=22:antialias=false;0
+font-3 = mplus Nerd Font Mono:size=16;1
+font-4 = mplus Nerd Font Mono:size=30;1
+;font-3 = "Material Icons:fontformat=truetype:size=12;1"
+font-5 = "Font Awesome 5 Free:size=12;1:antialias=false"
+font-6 = "Fura Mono Nerd Font Mono:size=16;1"
 
 
-modules-left = i3 xwindow
-modules-center = date weather
-modules-right = network volume cpu memory powermenu
+modules-left = i3 xwindow arrow->
+;modules-center = arrow<- date weather arrow->
+modules-right = arrow<- network volume cpu memory watts battery date weather powermenu
 
 tray-position = right
 tray-padding = 1
+tray-scale = 1.3
+tray-background = ${colors.background}
 ;tray-background = #66333333
 
 wm-restack = i3
@@ -46,35 +52,38 @@ scroll-down = i3-deskprev
 [module/i3]
 type = internal/i3
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = music;
-ws-icon-default = 
+;ws-icon-0 = 1;
+;ws-icon-1 = 2;
+;ws-icon-2 = 3;
+;ws-icon-3 = music;
+;ws-icon-default = 
 
-label-unfocused = %icon%
+label-unfocused = %index%
 label-unfocused-padding = 2
+label-unfocused-background = ${colors.background}
 
-format =" <label-mode><label-state>  "
-label-focused = %icon%  
-label-focused-background = #88000000
-label-focused-underline= #ddd
-label-focused-padding = 2 
+format ="<label-state><label-mode>"
+label-focused = %index%
+label-focused-background = ${colors.background}
+label-focused-foreground = ${colors.secondary}
+label-focused-underline= ${colors.secondary}
+label-focused-padding = 2
 
-label-occupied = %icon% 
-label-occupied-padding = 2 
+label-occupied = %index%
+label-occupied-padding = 2
 
-label-urgent = %icon% 
+label-urgent = %index%
 label-urgent-padding = 2
 
-label-empty = %icon% 
+;label-empty = %icon%
 label-empty-foreground = #44ffffff
 label-empty-padding = 2
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:60:...%
-label-padding = 1 
+label = %title:0:40:...%
+label-padding = 1
+label-background = ${colors.background}
 
 [module/date]
 type = internal/date
@@ -84,7 +93,7 @@ interval = 1.0
 
 ; See "man date" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = %a %b %d, 
+date = %a %b %d,
 
 ; Optional time format
 time = %I:%M %p
@@ -94,22 +103,23 @@ time = %I:%M %p
 date-alt = %A, %d %B %Y
 time-alt = %H:%M:%S
 
-label = %date% %time%
-format =    <label>
-;format-background = #ddffffff
+; label = %date% %time%
+label = %time%
+format = <label>
+format-background = ${colors.background}
 ;format-background = #88000000
 ;format-foreground = #333
-format-padding = 1 
+format-padding = 1
 
 [module/padding]
 type = custom/text
-content = 	 
+content =
 content-foreground = #00000000
 content-background = #55000000
 
 [module/avg-battery]
 type = custom/script
-exec = "count=$(acpi -b | wc -l); sum=$(acpi -b | egrep -o '[0-9]{1,3}%' | tr -d '%' | xargs -I% echo -n '+%'); echo $(( sum / count + 1))%  " 
+exec = "count=$(acpi -b | wc -l); sum=$(acpi -b | egrep -o '[0-9]{1,3}%' | tr -d '%' | xargs -I% echo -n '+%'); echo $(( sum / count + 1))%  "
 interval = 5
 format-padding = 4
 
@@ -123,15 +133,18 @@ adapter = AC0
 
 poll-interval = 5
 
-format-charging =<animation-charging>
-format-discharging =<ramp-capacity>
+format-charging =<label-charging><animation-charging>
+format-charging-background = ${colors.background}
+format-discharging =<label-discharging> <ramp-capacity>
+format-discharging-background = ${colors.background}
 format-full =<ramp-capacity>
-label-charging =  %percentage%
-label-discharging =  %percentage%
-label-full =
-format-charging-padding = 2
-format-discharging-padding = 2
-format-full-padding = 2
+format-full-background = ${colors.background}
+label-charging =  %percentage%%
+label-discharging =  %percentage%%
+label-full = %percentage%%
+format-charging-padding = 1
+format-discharging-padding = 1
+format-full-padding = 1
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -156,14 +169,15 @@ adapter = AC
 
 poll-interval = 5
 format-charging = <animation-charging>
-format-discharging = <ramp-capacity> 
-format-full = <ramp-capacity> 
-label-charging = Charging %percentage%% 
-label-discharging = %percentage%% 
-label-full = Fully charged 
-;format-charging-padding = 2
-;format-discharging-padding = 2
-;format-format-padding = 2
+format-background = ${colors.background}
+format-discharging = <ramp-capacity>
+format-full = <ramp-capacity>
+label-charging = Charging %percentage%%
+label-discharging = %percentage%%
+label-full = Fully charged
+format-charging-padding = 1
+format-discharging-padding = 1
+format-format-padding = 1
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -186,6 +200,7 @@ card = intel_backlight
 enable-scroll = true
 
 format = <ramp> <label>
+format-background = ${colors.background}
 label = %percentage%
 
 ramp-0 = 🌕
@@ -202,11 +217,13 @@ master-mixer = Master
 ;master-soundcard=hw:1
 format-volume = <ramp-volume><bar-volume>
 format-muted = <label-muted>
+format-volume-background = ${colors.background}
+format-muted-background = ${colors.background}
 label-volume = %percentage%
 label-muted =  muted
-label-muted-foreground = #aaa
-format-volume-padding = 0
-format-muted-padding = 0
+label-muted-foreground = ${colors.secondary}
+format-volume-padding = 1
+format-muted-padding = 1
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -233,14 +250,12 @@ bar-volume-empty-foreground = #555
 [module/powermenu]
 type = custom/menu
 
-label-open = 
-;label-open =       
-label-open-background = #dd0000
-;label-open-foreground = #fff
+;label-open = 
+label-open =   
+label-open-background = ${colors.alert}
 label-close = cancel
-label-close-background = #dd0000
-;label-close-foreground = #fff
-label-open-padding = 2 
+label-close-background = ${colors.alert}
+label-open-padding = 2
 label-close-padding = 5
 
 menu-0-0 = reboot
@@ -250,11 +265,11 @@ menu-0-1-exec = menu-open-2
 menu-0-0-padding = 2
 menu-0-1-padding = 2
 
-menu-1-0 = reboot?  
+menu-1-0 = reboot?
 menu-1-0-exec = sudo reboot
 menu-1-0-padding = 2
 
-menu-2-0 = power off?  
+menu-2-0 = power off?
 menu-2-0-exec = sudo poweroff
 menu-2-0-padding = 2
 
@@ -263,7 +278,7 @@ type = internal/mpd
 
 host = 127.0.0.1
 port = 6600
-password = 
+password =
 
 ; Seconds to sleep between progressbar/song timer sync
 ; Default: 1interval = 2
@@ -301,8 +316,11 @@ type = internal/cpu
 ; Seconds to sleep between updates
 ; Default: 1
 interval = 0.1
-format = <ramp-coreload>  
-format-padding = 2
+format = <ramp-coreload>
+format-padding = 1
+format-background = ${colors.background}
+format-font = 6
+
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load
@@ -322,14 +340,15 @@ type = internal/memory
 
 interval = 1
 
-format =  <label>   
-format-padding = 1 
+format =  <label>
+format-padding = 1
+format-background = ${colors.background}
 
-label =   %gb_used%
+label = %gb_used%
 
 [module/network]
 type = internal/network
-interface = enp13s0
+interface = wlp1s0
 format-connected-padding = 1
 ; Seconds to sleep between updates
 ; Default: 1
@@ -344,18 +363,24 @@ interval = 0.5
 ; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
 ; Minimum output width of upload/download rate
 ; Default: 3
-udspeed-minwidth = 4
+; udspeed-minwidth = 4
+
+;%downspeed:min% = 1
+;%upspeed:min% = 1
 
 ; Accumulate values from all interfaces
 ; when querying for up/downspeed rate
 ; Default: false
 accumulate-stats = true
 
-format-connected =    <label-connected>
+;format-connected =   <label-connected>
+format-connected = <label-connected>
+format-connected-background = ${colors.background}
 
 ; Available tags:
 ;   <label-disconnected> (default)
 format-disconnected = <label-disconnected>
+format-disconnected-background = ${colors.background}
 
 ; Available tags:
 ;   <label-connected> (default)
@@ -372,10 +397,11 @@ format-packetloss = <animation-packetloss> <label-connected>
 ;   %downspeed% [wireless+wired]
 ;   %linkspeed% [wired]
 ; Default: %ifname% %local_ip%
-label-connected = %essid% %downspeed:9%
-label-connected-foreground = #eefafafa
+;label-connected = %essid%%downspeed:9%
+label-connected = %essid%
+label-connected-foreground = ${colors.foreground}
 
-; Available tokens:
+; Available tokens:0
 ;   %ifname%    [wireless+wired]
 ; Default: (none)
 label-disconnected = not connected
@@ -407,9 +433,32 @@ animation-packetloss-1-foreground = #000000
 ; Framerate in milliseconds
 animation-packetloss-framerate = 500
 
+[module/arrow->]
+type = custom/text
+content = 
+content-foreground = ${colors.background}
+content-background = #00000000
+content-font = 5
+
+[module/arrow<-]
+type = custom/text
+content = 
+content-foreground = ${colors.background}
+content-background = #00000000
+content-font = 5
+
 [module/weather]
 type = custom/script
 interval = 10
 format = <label>
 exec = ~/.config/polybar/weather
-format-padding = 2
+format-padding = 1
+format-background = ${colors.background}
+
+[module/watts]
+type = custom/script
+interval = 5.0
+format = <label>
+exec = ~/.config/polybar/watts
+format-padding = 0
+format-background = ${colors.background}

@@ -1,0 +1,20 @@
+#!/usr/bin/python
+# Evelyn Dooley - Battery Power Monitor
+
+import subprocess
+
+# Read the current in micro-amps
+amps = int(subprocess.run(['cat', '/sys/class/power_supply/BAT0/current_now'], stdout=subprocess.PIPE).stdout)
+
+# Read the voltage in micro-volts
+volts = int(subprocess.run(['cat', '/sys/class/power_supply/BAT0/voltage_now'], stdout=subprocess.PIPE).stdout)
+
+# Multiply for power with Ohm's Law, convert to watts with 1 decimal place 
+watts = round(((volts * amps) / 1000000000000),1)
+
+# Check if battery is charging or not
+if 'Discharging' not in subprocess.run(['cat', '/sys/class/power_supply/BAT0/status'], stdout=subprocess.PIPE).stdout.decode('utf-8'):
+    print("+" + str(watts) + " W")
+else:
+    print(str(watts) + " W")
+

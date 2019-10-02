@@ -66,9 +66,7 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-export PATH="/usr/local/opt/make/libexec/gnubin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/opt/binutils/bin:/Users/evelyndooley/.cargo/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-export LSCOLORS="ExGxFxdaCxDADAadhbheFx"
+# export LSCOLORS="ExGxFxdaCxDADAadhbheFx"
 export PAGER="nvimpager"
 export MAKEFLAGS="-j$(expr $(nproc) \+ 1)"
 
@@ -93,28 +91,22 @@ setopt correctall
 
 # LS on cd
 chpwd() {
-  /bin/ls -G
+  /bin/ls --color=auto
 }
 
 # Aliases
 
 # System
 alias rm="rm -i"
-alias grep="ggrep --color=always"
-alias egrep="gegrep --color=always"
-alias sed="gsed"
-alias ls="/bin/ls -G"
 alias cp="cp -r"
-alias awk="gawk"
-alias rsync="/usr/local/Cellar/rsync/3.1.3_1/bin/rsync -avrP"
 
 # SSH
 alias samurai="ssh dooley@samurai.csh.rit.edu"
 alias eowyn="ssh -p 8020 dooley@eowyn.csh.rit.edu"
 
 # Python
-alias python="python3"
-alias pip="pip3"
+# alias python="python3"
+# alias pip="pip3"
 
 # NeoVim
 alias vim="nvim"
@@ -122,13 +114,10 @@ alias less=$PAGER
 alias zless=$PAGER
 alias cat="nvimpager -c"
 
-# Brew
-alias binstall="brew install"
-alias bsearch="brew search"
-alias chunkr="brew services restart chunkwm"
-alias skhdr="brew services restart skhd"
+alias pacman="pacman --color=auto"
+alias pacaur="pacaur --color=auto"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+cat ~/.cache/wal/sequences
 
 clear
 

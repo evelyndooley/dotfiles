@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -18,7 +18,7 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 10
-font Space Mono 13 
+font IBM Plex Mono 13 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -30,10 +30,13 @@ font Space Mono 13
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite 
+bindsym $mod+Return exec alacritty 
+
+# drop down terminal
+bindsym $mod+grave exec tdrop -ma -w -4 -y 0 -s dropdown alacritty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+w kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run
@@ -77,14 +80,14 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+Shift+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+space exec rofi -show run
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -164,8 +167,8 @@ bindsym $mod+r mode "resize"
 exec polybar -r top        
 
 # Gap size in px
-gaps inner 12
-gaps outer 5
+gaps inner 8
+gaps outer 3
 smart_borders on
 
 # Default startup apps
@@ -173,10 +176,10 @@ exec compton -b &
 exec nm-applet &
 exec blueman-applet &
 exec redshift &
-exec feh --bg-scale --randomize /hdd/wall/* &
 exec xbindkeys &
 exec devilspie -a &
-exec xss-lock -- ~/.config/i3/lock.sh -l &
+# exec xss-lock -- ~/.config/i3/lock.sh &
 exec udiskie --tray --use-udisks2 &
-exec cadence &
-
+exec libinput-gestures-setup start &
+exec /home/dooley/sh/bg.sh &
+exec wavebox &

@@ -1,6 +1,6 @@
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 Plug 'lilydjwg/Colorizer'
-Plug 'tyrannicaltoucan/vim-quantum'
+Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 set guioptions+=a
@@ -17,11 +17,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-set background=dark
-set termguicolors
-let g:quantum_black=1
-let g:quantum_italics=1
-colorscheme quantum
+colorscheme wal
 
 set fcs=eob:\ 
 
