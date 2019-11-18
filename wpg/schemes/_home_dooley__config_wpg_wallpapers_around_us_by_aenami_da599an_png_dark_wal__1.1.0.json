@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/around_us_by_aenami_da599an.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#001A24",
+        "foreground": "#d9d2da",
+        "cursor": "#d9d2da"
+    },
+    "colors": {
+        "color0": "#001A24",
+        "color1": "#1264E5",
+        "color2": "#2F76FC",
+        "color3": "#1C95F6",
+        "color4": "#328EFD",
+        "color5": "#5C9BCC",
+        "color6": "#53A2F2",
+        "color7": "#d9d2da",
+        "color8": "#979398",
+        "color9": "#1264E5",
+        "color10": "#2F76FC",
+        "color11": "#1C95F6",
+        "color12": "#328EFD",
+        "color13": "#5C9BCC",
+        "color14": "#53A2F2",
+        "color15": "#d9d2da"
+    }
+}

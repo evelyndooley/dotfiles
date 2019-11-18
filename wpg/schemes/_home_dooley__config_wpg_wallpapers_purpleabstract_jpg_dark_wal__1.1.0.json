@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/purpleabstract.jpg",
+    "alpha": "85",
+
+    "special": {
+        "background": "#240d2e",
+        "foreground": "#ffecff",
+        "cursor": "#ffecff"
+    },
+    "colors": {
+        "color0": "#240d2e",
+        "color1": "#86619F",
+        "color2": "#9A7BC2",
+        "color3": "#8B68A8",
+        "color4": "#7C5EA0",
+        "color5": "#AC89C9",
+        "color6": "#B497DC",
+        "color7": "#dac8e7",
+        "color8": "#421755",
+        "color9": "#b16ddf",
+        "color10": "#c58bff",
+        "color11": "#b675ec",
+        "color12": "#9f69e0",
+        "color13": "#e19cff",
+        "color14": "#e6acff",
+        "color15": "#ffecff"
+    }
+}

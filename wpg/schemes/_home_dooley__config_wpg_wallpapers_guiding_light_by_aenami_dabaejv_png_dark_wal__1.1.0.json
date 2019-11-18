@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/guiding_light_by_aenami_dabaejv.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#06090E",
+        "foreground": "#ddc1ca",
+        "cursor": "#ddc1ca"
+    },
+    "colors": {
+        "color0": "#06090E",
+        "color1": "#1B65B4",
+        "color2": "#5D5E97",
+        "color3": "#A06A92",
+        "color4": "#CF6E8C",
+        "color5": "#2186D3",
+        "color6": "#6699F0",
+        "color7": "#ddc1ca",
+        "color8": "#9a878d",
+        "color9": "#1B65B4",
+        "color10": "#5D5E97",
+        "color11": "#A06A92",
+        "color12": "#CF6E8C",
+        "color13": "#2186D3",
+        "color14": "#6699F0",
+        "color15": "#ddc1ca"
+    }
+}

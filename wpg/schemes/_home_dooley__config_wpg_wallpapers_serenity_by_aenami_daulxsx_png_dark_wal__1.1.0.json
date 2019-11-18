@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/serenity_by_aenami_daulxsx.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0c1015",
+        "foreground": "#e4eceb",
+        "cursor": "#e4eceb"
+    },
+    "colors": {
+        "color0": "#0c1015",
+        "color1": "#B08B6F",
+        "color2": "#73878B",
+        "color3": "#A4A8A2",
+        "color4": "#C1C4B9",
+        "color5": "#CCD7D2",
+        "color6": "#D2E1DD",
+        "color7": "#e4eceb",
+        "color8": "#9fa5a4",
+        "color9": "#B08B6F",
+        "color10": "#73878B",
+        "color11": "#A4A8A2",
+        "color12": "#C1C4B9",
+        "color13": "#CCD7D2",
+        "color14": "#D2E1DD",
+        "color15": "#e4eceb"
+    }
+}

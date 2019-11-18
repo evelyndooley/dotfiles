@@ -1,0 +1,16 @@
+rofi.color-enabled: true
+rofi.color-window: #191919, #5e9bde, #272822
+rofi.color-normal: #373636, #aeb1b2, #272822, #5e9bde, #272822
+rofi.color-active: #aeb1b2, #f4bf75, #312842, #c05c47, #272822
+rofi.color-urgent: #141021, #e4b226, #312842, #e4b226, #272822
+rofi.width: 1200
+rofi.padding: 20
+rofi.font: IBM Plex Mono 22
+rofi.bw: 3
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
+rofi.terminal: alacritty
+rofi.opacity: 50
+rofi.yoffset: -400
+rofi.lines: 5
+

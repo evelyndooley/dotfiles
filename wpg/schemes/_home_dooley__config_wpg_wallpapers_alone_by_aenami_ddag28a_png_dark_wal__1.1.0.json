@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/alone_by_aenami_ddag28a.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0A0F15",
+        "foreground": "#f6e1c7",
+        "cursor": "#f6e1c7"
+    },
+    "colors": {
+        "color0": "#0A0F15",
+        "color1": "#AF5458",
+        "color2": "#F79567",
+        "color3": "#746A87",
+        "color4": "#A1788E",
+        "color5": "#AE8DA5",
+        "color6": "#E0A3A2",
+        "color7": "#f6e1c7",
+        "color8": "#ac9d8b",
+        "color9": "#AF5458",
+        "color10": "#F79567",
+        "color11": "#746A87",
+        "color12": "#A1788E",
+        "color13": "#AE8DA5",
+        "color14": "#E0A3A2",
+        "color15": "#f6e1c7"
+    }
+}

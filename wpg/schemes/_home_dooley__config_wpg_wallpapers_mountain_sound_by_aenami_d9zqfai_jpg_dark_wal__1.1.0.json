@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/mountain_sound_by_aenami_d9zqfai.jpg",
+    "alpha": "85",
+
+    "special": {
+        "background": "#090106",
+        "foreground": "#ffbb78",
+        "cursor": "#ffbb78"
+    },
+    "colors": {
+        "color0": "#090106",
+        "color1": "#E16858",
+        "color2": "#5253B3",
+        "color3": "#F8912E",
+        "color4": "#112C95",
+        "color5": "#A44F63",
+        "color6": "#7ba4ec",
+        "color7": "#F88A59",
+        "color8": "#3b0125",
+        "color9": "#ff775e",
+        "color10": "#595bf9",
+        "color11": "#ffbc28",
+        "color12": "#0b32cc",
+        "color13": "#e55678",
+        "color14": "#88ceff",
+        "color15": "#ffbb78"
+    }
+}

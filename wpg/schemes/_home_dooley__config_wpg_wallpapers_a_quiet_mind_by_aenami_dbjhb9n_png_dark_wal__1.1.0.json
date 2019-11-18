@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/a_quiet_mind_by_aenami_dbjhb9n.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#371a10",
+        "foreground": "#cfe2e3",
+        "cursor": "#cfe2e3"
+    },
+    "colors": {
+        "color0": "#371a10",
+        "color1": "#46BEC4",
+        "color2": "#6FB9C4",
+        "color3": "#78C4CC",
+        "color4": "#9FB5B4",
+        "color5": "#93BBC4",
+        "color6": "#8FCCD2",
+        "color7": "#cfe2e3",
+        "color8": "#909e9e",
+        "color9": "#46BEC4",
+        "color10": "#6FB9C4",
+        "color11": "#78C4CC",
+        "color12": "#9FB5B4",
+        "color13": "#93BBC4",
+        "color14": "#8FCCD2",
+        "color15": "#cfe2e3"
+    }
+}

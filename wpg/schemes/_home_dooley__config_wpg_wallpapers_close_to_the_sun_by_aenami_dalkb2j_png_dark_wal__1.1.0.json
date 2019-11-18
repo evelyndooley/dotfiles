@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/close_to_the_sun_by_aenami_dalkb2j.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0D2739",
+        "foreground": "#abb0bc",
+        "cursor": "#abb0bc"
+    },
+    "colors": {
+        "color0": "#0D2739",
+        "color1": "#A83442",
+        "color2": "#A05C60",
+        "color3": "#DC6152",
+        "color4": "#F99D60",
+        "color5": "#3E6682",
+        "color6": "#536D88",
+        "color7": "#abb0bc",
+        "color8": "#777b83",
+        "color9": "#A83442",
+        "color10": "#A05C60",
+        "color11": "#DC6152",
+        "color12": "#F99D60",
+        "color13": "#3E6682",
+        "color14": "#536D88",
+        "color15": "#abb0bc"
+    }
+}

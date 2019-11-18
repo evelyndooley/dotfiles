@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/away_in_silence_by_aenami_dd9hkf3.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#051018",
+        "foreground": "#bcbac2",
+        "cursor": "#bcbac2"
+    },
+    "colors": {
+        "color0": "#051018",
+        "color1": "#6A7789",
+        "color2": "#867B8C",
+        "color3": "#AD7485",
+        "color4": "#E07983",
+        "color5": "#358395",
+        "color6": "#7B8294",
+        "color7": "#bcbac2",
+        "color8": "#838287",
+        "color9": "#6A7789",
+        "color10": "#867B8C",
+        "color11": "#AD7485",
+        "color12": "#E07983",
+        "color13": "#358395",
+        "color14": "#7B8294",
+        "color15": "#bcbac2"
+    }
+}

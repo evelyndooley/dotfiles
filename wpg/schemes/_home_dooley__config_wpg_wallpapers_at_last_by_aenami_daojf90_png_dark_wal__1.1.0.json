@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/at_last_by_aenami_daojf90.png",
+    "alpha": "85",
+
+    "special": {
+        "background": "#07181D",
+        "foreground": "#fef0f4",
+        "cursor": "#fef0f4"
+    },
+    "colors": {
+        "color0": "#07181D",
+        "color1": "#B84E3C",
+        "color2": "#A55A4E",
+        "color3": "#E5B35E",
+        "color4": "#963235",
+        "color5": "#D7694E",
+        "color6": "#E69A5B",
+        "color7": "#c1b6b9",
+        "color8": "#0f3946",
+        "color9": "#ff5a3e",
+        "color10": "#e66955",
+        "color11": "#ffee65",
+        "color12": "#d03338",
+        "color13": "#ff7c52",
+        "color14": "#ffc661",
+        "color15": "#fef0f4"
+    }
+}

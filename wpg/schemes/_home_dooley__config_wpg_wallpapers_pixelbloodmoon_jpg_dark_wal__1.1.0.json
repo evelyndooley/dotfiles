@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/pixelbloodmoon.jpg",
+    "alpha": "85",
+
+    "special": {
+        "background": "#0c1216",
+        "foreground": "#c8ffff",
+        "cursor": "#c8ffff"
+    },
+    "colors": {
+        "color0": "#0c1216",
+        "color1": "#CAB36E",
+        "color2": "#655783",
+        "color3": "#F0A46D",
+        "color4": "#276381",
+        "color5": "#AD6282",
+        "color6": "#1CB2FC",
+        "color7": "#98dfe1",
+        "color8": "#1d2c36",
+        "color9": "#fff27a",
+        "color10": "#7e62b8",
+        "color11": "#ffd177",
+        "color12": "#2784b2",
+        "color13": "#f26da6",
+        "color14": "#12edff",
+        "color15": "#c8ffff"
+    }
+}

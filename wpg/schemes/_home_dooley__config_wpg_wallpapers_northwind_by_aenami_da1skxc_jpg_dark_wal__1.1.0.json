@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/northwind_by_aenami_da1skxc.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#120912",
+        "foreground": "#deced8",
+        "cursor": "#deced8"
+    },
+    "colors": {
+        "color0": "#120912",
+        "color1": "#5A99B0",
+        "color2": "#22B3CD",
+        "color3": "#5EB6CC",
+        "color4": "#35C4DC",
+        "color5": "#5CC8DD",
+        "color6": "#6BD1E4",
+        "color7": "#deced8",
+        "color8": "#9b9097",
+        "color9": "#5A99B0",
+        "color10": "#22B3CD",
+        "color11": "#5EB6CC",
+        "color12": "#35C4DC",
+        "color13": "#5CC8DD",
+        "color14": "#6BD1E4",
+        "color15": "#deced8"
+    }
+}

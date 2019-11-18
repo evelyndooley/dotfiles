@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/erguy5q4q8k01.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0F0C12",
+        "foreground": "#e1cecb",
+        "cursor": "#e1cecb"
+    },
+    "colors": {
+        "color0": "#0F0C12",
+        "color1": "#946F73",
+        "color2": "#3F5681",
+        "color3": "#656B90",
+        "color4": "#8B798E",
+        "color5": "#A28892",
+        "color6": "#A394A7",
+        "color7": "#e1cecb",
+        "color8": "#9d908e",
+        "color9": "#946F73",
+        "color10": "#3F5681",
+        "color11": "#656B90",
+        "color12": "#8B798E",
+        "color13": "#A28892",
+        "color14": "#A394A7",
+        "color15": "#e1cecb"
+    }
+}

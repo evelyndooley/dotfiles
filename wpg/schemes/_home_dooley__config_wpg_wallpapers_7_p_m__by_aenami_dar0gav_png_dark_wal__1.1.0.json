@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/7_p_m__by_aenami_dar0gav.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0F132F",
+        "foreground": "#e0afdb",
+        "cursor": "#e0afdb"
+    },
+    "colors": {
+        "color0": "#0F132F",
+        "color1": "#6353CC",
+        "color2": "#6E55D4",
+        "color3": "#8E3E83",
+        "color4": "#A35399",
+        "color5": "#E26DA9",
+        "color6": "#9B5FCF",
+        "color7": "#e0afdb",
+        "color8": "#9c7a99",
+        "color9": "#6353CC",
+        "color10": "#6E55D4",
+        "color11": "#8E3E83",
+        "color12": "#A35399",
+        "color13": "#E26DA9",
+        "color14": "#9B5FCF",
+        "color15": "#e0afdb"
+    }
+}

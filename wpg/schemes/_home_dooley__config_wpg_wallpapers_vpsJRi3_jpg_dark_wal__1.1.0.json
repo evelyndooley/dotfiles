@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/vpsJRi3.jpg",
+    "alpha": "85",
+
+    "special": {
+        "background": "#090f10",
+        "foreground": "#fffcff",
+        "cursor": "#fffcff"
+    },
+    "colors": {
+        "color0": "#090f10",
+        "color1": "#9C959B",
+        "color2": "#E2C8B7",
+        "color3": "#CEB2A6",
+        "color4": "#B8B8C5",
+        "color5": "#ADABB6",
+        "color6": "#7A8498",
+        "color7": "#d8d6da",
+        "color8": "#1a2d30",
+        "color9": "#deadd7",
+        "color10": "#fff4ca",
+        "color11": "#ffddbf",
+        "color12": "#d6d6ff",
+        "color13": "#d2c7ff",
+        "color14": "#8ca5d7",
+        "color15": "#fffcff"
+    }
+}

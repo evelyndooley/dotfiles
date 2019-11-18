@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/otherside_by_aenami_davkr4n.png",
+    "alpha": "85",
+
+    "special": {
+        "background": "#170c11",
+        "foreground": "#faeef5",
+        "cursor": "#faeef5"
+    },
+    "colors": {
+        "color0": "#170c11",
+        "color1": "#E4631C",
+        "color2": "#A74F2B",
+        "color3": "#E9B345",
+        "color4": "#C25438",
+        "color5": "#9C655F",
+        "color6": "#F8991A",
+        "color7": "#bdb4b9",
+        "color8": "#381c29",
+        "color9": "#ff7b13",
+        "color10": "#e6602a",
+        "color11": "#ffef46",
+        "color12": "#ff6338",
+        "color13": "#db766b",
+        "color14": "#ffc90f",
+        "color15": "#faeef5"
+    }
+}

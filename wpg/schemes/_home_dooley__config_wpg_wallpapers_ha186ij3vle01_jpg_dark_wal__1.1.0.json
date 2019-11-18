@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/ha186ij3vle01.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#090B11",
+        "foreground": "#dabcbe",
+        "cursor": "#dabcbe"
+    },
+    "colors": {
+        "color0": "#090B11",
+        "color1": "#996475",
+        "color2": "#3D5583",
+        "color3": "#6A6498",
+        "color4": "#936D9C",
+        "color5": "#D37189",
+        "color6": "#A08BB0",
+        "color7": "#dabcbe",
+        "color8": "#988385",
+        "color9": "#996475",
+        "color10": "#3D5583",
+        "color11": "#6A6498",
+        "color12": "#936D9C",
+        "color13": "#D37189",
+        "color14": "#A08BB0",
+        "color15": "#dabcbe"
+    }
+}

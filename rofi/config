@@ -1,0 +1,28 @@
+rofi.modi:                           window,run,ssh
+rofi.width:                          50
+rofi.lines:                          5
+rofi.columns:                        1
+rofi.yoffset:			     -400
+rofi.font:                           IBM Plex Mono 22
+rofi.color-normal:                   #212324, #fffcf6, #212324, #cba68f, #fffcf6
+rofi.color-urgent:                   #212324, #d6b48d, #22231D, #d6b48d, #fffcf6
+rofi.color-active:                   #212324, #efc1a6, #212324, #efc1a6, #212324
+rofi.color-window:                   #212324, #cba68f, #8c7262
+rofi.bw:                             5
+rofi.location:                       0
+rofi.padding:                        5
+rofi.yoffset:                        0
+rofi.xoffset:                        0
+rofi.fixed-num-lines:                true
+rofi.terminal:                       alacritty
+rofi.ssh-client:                     ssh
+rofi.ssh-command:                    {terminal} -e {ssh-client} {host}
+rofi.run-command:                    {cmd}
+rofi.parse-hosts:                    true
+rofi.matching:                       normal
+rofi.separator-style:                none
+rofi.scrollbar-width:                0
+rofi.kb-mode-next:                   Shift+Right,Control+Tab,Alt+l
+rofi.kb-mode-previous:               Shift+Left,Control+Shift+Tab,Alt+h
+rofi.kb-row-up:                      Up,Control+p,Shift+Tab,Shift+ISO_Left_Tab,Alt+k
+rofi.kb-row-down:                    Down,Control+n,Alt+j

@@ -1,5 +1,4 @@
-# Evelyn Dooley's .zshrc for MAC - Desktop edition
-
+# Evelyn Dooley's .zshrc
 
 ###############################
 ###### ZSH Configuration ######
@@ -10,33 +9,19 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="spaceship"
 
 SPACESHIP_PROMPT_ORDER=(
-  #time        # Time stampts section (Disabled)
   user          # Username section
   dir           # Current directory section
   host          # Hostname section
   git           # Git section (git_branch + git_status)
-  # hg            # Mercurial section (hg_branch  + hg_status)
-  # package     # Package version (Disabled)
   node          # Node.js section
   ruby          # Ruby section
-  # elixir        # Elixir section
-  # xcode       # Xcode section (Disabled)
-  # swift         # Swift section
-  # golang        # Go section
   php           # PHP section
   rust          # Rust section
-  # haskell       # Haskell Stack section
-  # julia       # Julia section (Disabled)
-  docker      # Docker section (Disabled)
-  # aws           # Amazon Web Services section
+  docker        # Docker section
   venv          # virtualenv section
   pyenv         # Pyenv section
-  # dotnet        # .NET section
-  # ember       # Ember.js section (Disabled)
-  # kubecontext   # Kubectl context section
   exec_time     # Execution time
   line_sep      # Line break
-  # vi_mode     # Vi-mode indicator (Disabled)
   char          # Prompt character
 )
 
@@ -57,11 +42,9 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 
-################################
-###### User configuration ######
-################################
-#
-# Environment Variables
+###############################
+#### Environment Variables ####
+###############################
 
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
@@ -70,7 +53,10 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 export PAGER="nvimpager"
 export MAKEFLAGS="-j$(expr $(nproc) \+ 1)"
 
-# Functions
+
+###########################
+######## Functions ########
+###########################
 
 # Auto correct mistyped command
 autoload -U colors && colors
@@ -94,7 +80,10 @@ chpwd() {
   /bin/ls --color=auto
 }
 
-# Aliases
+
+#########################
+######## Aliases ########
+#########################
 
 # System
 alias rm="rm -i"
@@ -116,6 +105,8 @@ alias cat="nvimpager -c"
 
 alias pacman="pacman --color=auto"
 alias pacaur="pacaur --color=auto"
+
+
 
 cat ~/.cache/wal/sequences
 

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/inversetriangle.jpg",
+    "alpha": "85",
+
+    "special": {
+        "background": "#0f1137",
+        "foreground": "#ffffed",
+        "cursor": "#ffffed"
+    },
+    "colors": {
+        "color0": "#0f1137",
+        "color1": "#B6B4A8",
+        "color2": "#DFCF97",
+        "color3": "#DBB97B",
+        "color4": "#425885",
+        "color5": "#E9A88B",
+        "color6": "#658F86",
+        "color7": "#ece4ce",
+        "color8": "#191c5e",
+        "color9": "#fffac3",
+        "color10": "#ffffac",
+        "color11": "#fff689",
+        "color12": "#486db9",
+        "color13": "#ffd19c",
+        "color14": "#73c9b7",
+        "color15": "#ffffed"
+    }
+}

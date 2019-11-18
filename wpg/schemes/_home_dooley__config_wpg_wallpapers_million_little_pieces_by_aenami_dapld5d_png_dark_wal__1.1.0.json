@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/million_little_pieces_by_aenami_dapld5d.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0a0709",
+        "foreground": "#f3cc94",
+        "cursor": "#f3cc94"
+    },
+    "colors": {
+        "color0": "#0a0709",
+        "color1": "#714444",
+        "color2": "#8E2C33",
+        "color3": "#A9292E",
+        "color4": "#C03C33",
+        "color5": "#DD5528",
+        "color6": "#903646",
+        "color7": "#f3cc94",
+        "color8": "#aa8e67",
+        "color9": "#714444",
+        "color10": "#8E2C33",
+        "color11": "#A9292E",
+        "color12": "#C03C33",
+        "color13": "#DD5528",
+        "color14": "#903646",
+        "color15": "#f3cc94"
+    }
+}

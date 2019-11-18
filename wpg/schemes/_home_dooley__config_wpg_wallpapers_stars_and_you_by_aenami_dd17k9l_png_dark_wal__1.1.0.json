@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/stars_and_you_by_aenami_dd17k9l.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0F1719",
+        "foreground": "#a1c6bd",
+        "cursor": "#a1c6bd"
+    },
+    "colors": {
+        "color0": "#0F1719",
+        "color1": "#5F5353",
+        "color2": "#A23636",
+        "color3": "#914D52",
+        "color4": "#AC5255",
+        "color5": "#D95C5A",
+        "color6": "#4D8779",
+        "color7": "#a1c6bd",
+        "color8": "#708a84",
+        "color9": "#5F5353",
+        "color10": "#A23636",
+        "color11": "#914D52",
+        "color12": "#AC5255",
+        "color13": "#D95C5A",
+        "color14": "#4D8779",
+        "color15": "#a1c6bd"
+    }
+}

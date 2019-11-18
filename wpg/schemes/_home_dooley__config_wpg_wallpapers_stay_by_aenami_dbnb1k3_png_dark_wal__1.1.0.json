@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/stay_by_aenami_dbnb1k3.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0A0F11",
+        "foreground": "#c2b9b9",
+        "cursor": "#c2b9b9"
+    },
+    "colors": {
+        "color0": "#0A0F11",
+        "color1": "#51666C",
+        "color2": "#6E7074",
+        "color3": "#8E3B3D",
+        "color4": "#966C6D",
+        "color5": "#CC595A",
+        "color6": "#897F80",
+        "color7": "#c2b9b9",
+        "color8": "#878181",
+        "color9": "#51666C",
+        "color10": "#6E7074",
+        "color11": "#8E3B3D",
+        "color12": "#966C6D",
+        "color13": "#CC595A",
+        "color14": "#897F80",
+        "color15": "#c2b9b9"
+    }
+}

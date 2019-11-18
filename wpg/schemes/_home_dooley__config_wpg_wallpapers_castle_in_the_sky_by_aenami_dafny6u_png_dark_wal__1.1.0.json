@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/castle_in_the_sky_by_aenami_dafny6u.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#061321",
+        "foreground": "#bed2d7",
+        "cursor": "#bed2d7"
+    },
+    "colors": {
+        "color0": "#061321",
+        "color1": "#235DAB",
+        "color2": "#93638B",
+        "color3": "#3A94C7",
+        "color4": "#989C9A",
+        "color5": "#95B1B8",
+        "color6": "#D9CBAB",
+        "color7": "#bed2d7",
+        "color8": "#859396",
+        "color9": "#235DAB",
+        "color10": "#93638B",
+        "color11": "#3A94C7",
+        "color12": "#989C9A",
+        "color13": "#95B1B8",
+        "color14": "#D9CBAB",
+        "color15": "#bed2d7"
+    }
+}

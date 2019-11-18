@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/daylight_by_aenami_da0mydm.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#120616",
+        "foreground": "#c3dbdc",
+        "cursor": "#c3dbdc"
+    },
+    "colors": {
+        "color0": "#120616",
+        "color1": "#5E6690",
+        "color2": "#8E738F",
+        "color3": "#1999B3",
+        "color4": "#60A9B8",
+        "color5": "#10AFC5",
+        "color6": "#C0B4A5",
+        "color7": "#c3dbdc",
+        "color8": "#88999a",
+        "color9": "#5E6690",
+        "color10": "#8E738F",
+        "color11": "#1999B3",
+        "color12": "#60A9B8",
+        "color13": "#10AFC5",
+        "color14": "#C0B4A5",
+        "color15": "#c3dbdc"
+    }
+}

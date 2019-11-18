@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/ymmraHp.jpg",
+    "alpha": "85",
+
+    "special": {
+        "background": "#090c19",
+        "foreground": "#ffffee",
+        "cursor": "#ffffee"
+    },
+    "colors": {
+        "color0": "#090c19",
+        "color1": "#9FA594",
+        "color2": "#8D958B",
+        "color3": "#C7BC9D",
+        "color4": "#637784",
+        "color5": "#ADAD96",
+        "color6": "#768987",
+        "color7": "#e8dfcc",
+        "color8": "#151d3e",
+        "color9": "#d4eaac",
+        "color10": "#acd4a2",
+        "color11": "#ffffb5",
+        "color12": "#719dba",
+        "color13": "#f5f5ae",
+        "color14": "#88c2bc",
+        "color15": "#ffffee"
+    }
+}

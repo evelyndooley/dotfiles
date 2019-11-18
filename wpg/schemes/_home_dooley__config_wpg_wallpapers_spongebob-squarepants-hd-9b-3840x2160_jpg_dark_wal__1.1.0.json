@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/spongebob-squarepants-hd-9b-3840x2160.jpg",
+    "alpha": "85",
+
+    "special": {
+        "background": "#0E1011",
+        "foreground": "#fdeff8",
+        "cursor": "#fdeff8"
+    },
+    "colors": {
+        "color0": "#0E1011",
+        "color1": "#975B34",
+        "color2": "#5F5C5B",
+        "color3": "#B4975D",
+        "color4": "#39464D",
+        "color5": "#956D56",
+        "color6": "#513A46",
+        "color7": "#c0b5bc",
+        "color8": "#24292c",
+        "color9": "#d17336",
+        "color10": "#87716a",
+        "color11": "#fbca67",
+        "color12": "#415d6c",
+        "color13": "#d08960",
+        "color14": "#72425b",
+        "color15": "#fdeff8"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/yg5IBiq.jpg",
+    "alpha": "85",
+
+    "special": {
+        "background": "#1b2512",
+        "foreground": "#ebf9ff",
+        "cursor": "#ebf9ff"
+    },
+    "colors": {
+        "color0": "#1b2512",
+        "color1": "#467AED",
+        "color2": "#738CA7",
+        "color3": "#8FA0A9",
+        "color4": "#326DEC",
+        "color5": "#91B1F1",
+        "color6": "#6493F1",
+        "color7": "#cedaf0",
+        "color8": "#334622",
+        "color9": "#4697ff",
+        "color10": "#83b5eb",
+        "color11": "#a5d6ef",
+        "color12": "#2e86ff",
+        "color13": "#a3ddff",
+        "color14": "#6bb7ff",
+        "color15": "#ebf9ff"
+    }
+}

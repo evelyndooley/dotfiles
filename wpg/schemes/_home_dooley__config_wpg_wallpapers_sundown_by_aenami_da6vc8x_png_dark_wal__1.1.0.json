@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/sundown_by_aenami_da6vc8x.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#080D17",
+        "foreground": "#e7b6b7",
+        "cursor": "#e7b6b7"
+    },
+    "colors": {
+        "color0": "#080D17",
+        "color1": "#AB2D30",
+        "color2": "#D23332",
+        "color3": "#B8463A",
+        "color4": "#E25837",
+        "color5": "#E75747",
+        "color6": "#F0A540",
+        "color7": "#e7b6b7",
+        "color8": "#a17f80",
+        "color9": "#AB2D30",
+        "color10": "#D23332",
+        "color11": "#B8463A",
+        "color12": "#E25837",
+        "color13": "#E75747",
+        "color14": "#F0A540",
+        "color15": "#e7b6b7"
+    }
+}

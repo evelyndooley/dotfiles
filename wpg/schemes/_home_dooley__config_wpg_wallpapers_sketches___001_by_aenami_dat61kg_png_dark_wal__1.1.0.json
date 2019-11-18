@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/sketches___001_by_aenami_dat61kg.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#060505",
+        "foreground": "#c7c0c2",
+        "cursor": "#c7c0c2"
+    },
+    "colors": {
+        "color0": "#060505",
+        "color1": "#926B76",
+        "color2": "#CF667B",
+        "color3": "#8A827E",
+        "color4": "#A87A84",
+        "color5": "#D7798B",
+        "color6": "#AC8F96",
+        "color7": "#c7c0c2",
+        "color8": "#8b8687",
+        "color9": "#926B76",
+        "color10": "#CF667B",
+        "color11": "#8A827E",
+        "color12": "#A87A84",
+        "color13": "#D7798B",
+        "color14": "#AC8F96",
+        "color15": "#c7c0c2"
+    }
+}

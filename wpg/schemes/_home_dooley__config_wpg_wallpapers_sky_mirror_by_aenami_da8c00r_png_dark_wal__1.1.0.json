@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/sky_mirror_by_aenami_da8c00r.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#04152F",
+        "foreground": "#e6c6e0",
+        "cursor": "#e6c6e0"
+    },
+    "colors": {
+        "color0": "#04152F",
+        "color1": "#9D61A3",
+        "color2": "#CF73B5",
+        "color3": "#4C90D9",
+        "color4": "#E694A8",
+        "color5": "#CEAAB5",
+        "color6": "#A8A0D4",
+        "color7": "#e6c6e0",
+        "color8": "#a18a9c",
+        "color9": "#9D61A3",
+        "color10": "#CF73B5",
+        "color11": "#4C90D9",
+        "color12": "#E694A8",
+        "color13": "#CEAAB5",
+        "color14": "#A8A0D4",
+        "color15": "#e6c6e0"
+    }
+}
