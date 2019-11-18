@@ -4,9 +4,11 @@
 
 Check `nvim/`, `nvimpager/`, and `firefox/` for info on those configs!
 
-## ZSH
+## Scripts
 
-![ZSH prompt showing syntax hightlighting and auto suggestions](/screens/zsh.png?raw=true)
+`bg.sh` - compound script to select a random wallpaper, get colors with pywal, and apply them through wpgtk to the gtk theme, rofi, alacritty, polybar, and anything else that uses pywal colors. Modify the path to point to your wallpaper folder.
+
+## ZSH
 
 #### Framework 
 
@@ -41,34 +43,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ## tmux
 
-![tmux with three panes open, one showing neovim, another showing true color support, and another showing neofetch](/screens/tmux.png?raw=true)
+![tmux with three panes open, one showing neovim, another showing htop, and another showing neofetch](/screens/tmux.png?raw=true)
 
 Prefix mapped to `^A`
 
-`spotify.scpt` is an AppleScript to show Spotify's current song and it's status. Requires Spotify.app to be installed.
+## polybar
 
-## iTerm2
+![polybar with multiple extensions](/screens/polybar.png?raw=true)
 
-![Three iTerm2 windows: a tiled one, a floating one, and a drop down one.](/screens/iterm.png?raw=true)
-
-#### Profiles
-
-###### default
-Opaque, dark gray background, starts a tmux session, can be tiled with `chunkwm`.
-
-###### floating
-Blurred, transparent background, starts a tmux session, can be moved as a floating window in `chunkwm`.
-
-###### Hotkey window
-Slightly transparent background, no tmux session, drops down from the top of the screen, ignored by `chunkwm`. Opens with `cmd+ESC`
-
-## chunkwm + skhd
-
-![chunkwm tiled firefox and iTerm, with floating Finder window](/screens/chunkwm.png?raw=true)
-
-Customized `skhd` config includes i3-like keybindings as well as extras found at the bottom of the file
-
-Make sure `.chunkwmrc` and `.skhdrc` are executable!
-
+Dual pane polybar with i3 desktops and window title in the left pane, and many status modules in the right pane. Contains Python scripts for a power usage calculator (in watts) and a weather indicator with the current temperature. 
 
 
