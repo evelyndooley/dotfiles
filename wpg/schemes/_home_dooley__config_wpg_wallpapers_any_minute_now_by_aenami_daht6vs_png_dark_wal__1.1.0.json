@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/dooley/.config/wpg/wallpapers/any_minute_now_by_aenami_daht6vs.png",
+    "alpha": "85",
+
+    "special": {
+        "background": "#011924",
+        "foreground": "#fff1d8",
+        "cursor": "#fff1d8"
+    },
+    "colors": {
+        "color0": "#011924",
+        "color1": "#B9493C",
+        "color2": "#A55E54",
+        "color3": "#EF926F",
+        "color4": "#71585A",
+        "color5": "#B88672",
+        "color6": "#D46951",
+        "color7": "#edc3af",
+        "color8": "#013b56",
+        "color9": "#ff523e",
+        "color10": "#e66e5d",
+        "color11": "#ffb379",
+        "color12": "#9f656a",
+        "color13": "#ffa580",
+        "color14": "#ff7c56",
+        "color15": "#fff1d8"
+    }
+}

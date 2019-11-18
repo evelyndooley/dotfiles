@@ -147,6 +147,7 @@ exec nm-applet &
 exec blueman-applet &
 exec redshift &
 exec devilspie -a &
+exec flameshot &
 # exec xss-lock -- ~/.config/i3/lock.sh &
 exec udiskie --tray --use-udisks2 &
 #exec libinput-gestures-setup start &

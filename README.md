@@ -1,6 +1,6 @@
-# Evelyn's Dotfiles for Mac OS
+# Evelyn's Dotfiles for Linux
 
-![iTerm2 showing a ZSH Spaceship prompt inside a tmux session](/screens/term.png?raw=true)
+![Alacritty terminal running neofetch](/screens/term.png?raw=true)
 
 Check `nvim/`, `nvimpager/`, and `firefox/` for info on those configs!
 

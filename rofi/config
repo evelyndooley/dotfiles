@@ -4,10 +4,10 @@ rofi.lines:                          5
 rofi.columns:                        1
 rofi.yoffset:			     -400
 rofi.font:                           IBM Plex Mono 22
-rofi.color-normal:                   #212324, #fffcf6, #212324, #cba68f, #fffcf6
-rofi.color-urgent:                   #212324, #d6b48d, #22231D, #d6b48d, #fffcf6
-rofi.color-active:                   #212324, #efc1a6, #212324, #efc1a6, #212324
-rofi.color-window:                   #212324, #cba68f, #8c7262
+rofi.color-normal:                   #04152F, #e6c6e0, #04152F, #b77686, #e6c6e0
+rofi.color-urgent:                   #04152F, #d6b48d, #22231D, #d6b48d, #e6c6e0
+rofi.color-active:                   #04152F, #A8A0D4, #04152F, #A8A0D4, #04152F
+rofi.color-window:                   #04152F, #b77686, #7e515c
 rofi.bw:                             5
 rofi.location:                       0
 rofi.padding:                        5
