@@ -1,7 +1,35 @@
+/* Show title of unread tabs with red and italic font */
+/*
+:root.sidebar tab-item.unread .label-content {
+  color: red !important;
+  font-style: italic !important;
+}
+*/
+
+/* Add private browsing indicator per tab */
+/*
+:root.sidebar tab-item.private-browsing tab-label:before {
+  content: "🕶";
+}
+*/
+/* Hide border on tab bar, force its state to 'scroll', adjust margin-left for width of scrollbar. */
+#tabbar { 
+  border: 0;
+  overflow-y: scroll !important;
+  margin-left: -18px !important; 
+}  
+
+#tabbar:not(:hover) tab-item { 
+  margin-left: 0 !important;
+  --tab-margin-left: 0;
+  transition: all 200ms !important;
+  transition-delay: 350ms !important;
+}
+
 /* Hide .twisty and adjust margins so favicons have 7px on left. */
 .tab .twisty {
     visibility: hidden;
-    margin-left: -12px;
+    margin-left: 5px;
 }
 
 /* Push tab labels slightly to the right so they're completely hidden in collapsed state */
@@ -9,10 +37,20 @@
     margin-left: 7px;
 }
 
+/* Hide close buttons on tabs. 
+.tab .closebox {
+    visibility: collapse;
+} */
+
 /* Hide sound playing/muted button. */
 .sound-button::before {
     display: none !important;
 }
+
+/* Hide 'new tab' button. 
+.newtab-button {
+    display: none;
+} */
 
 /* ################################################ */
 /* ##### COLOR THEME ############################## */
@@ -39,31 +77,11 @@
         left: calc(50% - 175px);
     }
 }
-:root {
-    background-color: #383838;
-}
-#tabbar {
-    border-right: 1px solid #1d1d1d;
-    box-shadow: none !important;
-}
-.tab {
-    background-color: transparent;
-    border-color: #292929;
-    color: rgba(207,207,207,0.75);
-    box-shadow: none !important;
-}
-.tab:hover {
-    background-color: #404040 !important;
-    color: rgba(207,207,207,1) !important;
-}
-.tab.discarded {
-    background-color: #1d1d1d;
-    color: #383838 !important;
-}
-.tab.discarded:hover {
-    background-color: #292929 !important;
-}
 
+#tabbar {
+    border-right: 0px solid #1d1d1d;
+    box-shadow: none !important;
+} 
 
 
 /* Adjust style for tab that has sound playing. */
@@ -73,7 +91,7 @@
     top: 50%;
     left: 50%;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: #281d4d;
     animation: pulse 2s ease-out 0s infinite;
     z-index: -1;
     opacity: 0;
@@ -82,15 +100,4 @@
 /* Adjust style for tab that is muted. */
 .tab.muted {
     opacity: 0.5;
-}
-
-/* hide scrollbar */
-#tabbar { scrollbar-width: none; }
-
-/* cancel spaces for macOS overlay scrollbar */
-:root.platform-mac #tabbar:dir(rtl).overflow .tab:not(.pinned) {
-  padding-left: 0;
-}
-:root.platform-mac #tabbar:dir(ltr).overflow .tab:not(.pinned) {
-  padding-right: 0;
 }
