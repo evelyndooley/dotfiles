@@ -6,7 +6,7 @@
 ###############################
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=/Users/edooley/.oh-my-zsh
 ZSH_THEME="spaceship"
 
 SPACESHIP_PROMPT_ORDER=(
@@ -66,11 +66,9 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-export PATH="/usr/local/opt/make/libexec/gnubin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/opt/binutils/bin:/Users/evelyndooley/.cargo/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export PATH="/Users/edooley/.local/bin:/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/opt/binutils/bin:/Users/evelyndooley/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:$PATH"
 export LSCOLORS="ExGxFxdaCxDADAadhbheFx"
 export PAGER="nvimpager"
-export MAKEFLAGS="-j$(expr $(nproc) \+ 1)"
 
 # Functions
 
@@ -93,24 +91,26 @@ setopt correctall
 
 # LS on cd
 chpwd() {
-  /bin/ls -G
+  ls
 }
+
+# Brew
+alias binstall="brew install"
+alias bsearch="brew search"
 
 # Aliases
 
+export MAKEFLAGS="-j$(expr $(nproc) \+ 1)"
+
 # System
 alias rm="rm -i"
-alias grep="ggrep --color=always"
-alias egrep="gegrep --color=always"
-alias sed="gsed"
+#alias grep="ggrep --color=always"
+#alias egrep="gegrep --color=always"
+#alias sed="gsed"
 alias ls="/bin/ls -G"
 alias cp="cp -r"
-alias awk="gawk"
-alias rsync="/usr/local/Cellar/rsync/3.1.3_1/bin/rsync -avrP"
-
-# SSH
-alias samurai="ssh dooley@samurai.csh.rit.edu"
-alias eowyn="ssh -p 8020 dooley@eowyn.csh.rit.edu"
+#alias awk="gawk"
+#alias rsync="/usr/local/Cellar/rsync/3.1.3_1/bin/rsync -avrP"
 
 # Python
 alias python="python3"
@@ -122,14 +122,11 @@ alias less=$PAGER
 alias zless=$PAGER
 alias cat="nvimpager -c"
 
-# Brew
-alias binstall="brew install"
-alias bsearch="brew search"
-alias chunkr="brew services restart chunkwm"
-alias skhdr="brew services restart skhd"
-
+# iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-clear
+eval "$(fnm env)"
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+clear
