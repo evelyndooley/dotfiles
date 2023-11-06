@@ -1,12 +1,9 @@
-# Evelyn Dooley's .zshrc for MAC - Desktop edition
-
-
 ###############################
 ###### ZSH Configuration ######
 ###############################
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/edooley/.oh-my-zsh
+export ZSH=/home/dooley/.oh-my-zsh
 ZSH_THEME="spaceship"
 
 SPACESHIP_PROMPT_ORDER=(
@@ -50,8 +47,6 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
-  copydir
-  copyfile
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -66,9 +61,7 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-export PATH="/Users/edooley/.local/bin:/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/opt/binutils/bin:/Users/evelyndooley/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:$PATH"
-export LSCOLORS="ExGxFxdaCxDADAadhbheFx"
-export PAGER="nvimpager"
+#export PAGER="nvimpager"
 
 # Functions
 
@@ -94,39 +87,24 @@ chpwd() {
   ls
 }
 
-# Brew
-alias binstall="brew install"
-alias bsearch="brew search"
-
 # Aliases
 
 export MAKEFLAGS="-j$(expr $(nproc) \+ 1)"
 
 # System
 alias rm="rm -i"
-#alias grep="ggrep --color=always"
-#alias egrep="gegrep --color=always"
-#alias sed="gsed"
-alias ls="/bin/ls -G"
+alias ls="ls --color=auto"
 alias cp="cp -r"
-#alias awk="gawk"
-#alias rsync="/usr/local/Cellar/rsync/3.1.3_1/bin/rsync -avrP"
 
 # Python
 alias python="python3"
 alias pip="pip3"
 
-# NeoVim
-alias vim="nvim"
-alias less=$PAGER
-alias zless=$PAGER
-alias cat="nvimpager -c"
-
-# iTerm2 Shell Integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-eval "$(fnm env)"
-
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 clear
+# Uncomment the following line to change how often to auto-update (in days).
+# COMPLETION_WAITING_DOTS="true"
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+
+export ARCHFLAGS="-arch x86_64"
